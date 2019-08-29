@@ -26,8 +26,6 @@ button.btn{
     opacity: 0.8;
     text-transform: uppercase;
 
-    
-
 }
     /*
         Sección Tamaños
@@ -38,6 +36,12 @@ button.btn{
         Para los botones con clases btn y big:
             -Tamaño de fuente de 1.1em
     */
+button.btn.small{
+    font-size: 0.7em;
+}
+button.btn.big{
+    font-size: 1.1em;
+}
 
     /*
         Sección Colores
@@ -48,7 +52,22 @@ button.btn{
             -sky: Fondo #00BCD4; color de texto blanco
             -purple: Fondo #673AB7; color de texto blanco
     */
-
+button.btn.black{
+    background: #1A237E;
+    color: white;
+}
+button.btn.green{
+    background: #4CAF50;;
+    color: white;
+}
+button.btn.sky{
+    background:#00BCD4;
+    color: white;
+}
+button.btn.purple{
+    background:#673AB7;
+    color: white;
+}
     /*
         Sección Bordes
 
