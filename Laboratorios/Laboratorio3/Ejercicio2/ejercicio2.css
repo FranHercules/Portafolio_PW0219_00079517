@@ -1,0 +1,7 @@
+body{
+    background-image: url(fondo.jpg);
+}
+
+.header{
+    flex-direction: row-reverse;
+}
