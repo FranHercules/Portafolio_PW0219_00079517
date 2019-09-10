@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,sBAAsB;CAC3C;;AACD,AAAA,EAAE,CAAA;EACC,UAAU,EAAE,MAAM;CACpB;;ACLD,AAAA,OAAO,CAAA;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,WAAW;EAE3B,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "../SCSS/style.scss",
+        "../SCSS/Componentes/_global.scss",
+        "../SCSS/Componentes/_header.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
