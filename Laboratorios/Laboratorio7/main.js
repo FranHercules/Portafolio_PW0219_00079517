@@ -10,12 +10,11 @@ let addStudent = (carnet, schedule, later) => {
     let datetime = new Date()
 
     new_row.className = "table_active"
-    new_row.innerHTML = ""
-
-    `<th scope='row'>${carnet}</th>
+    new_row.innerHTML = `
+    <th scope='row'>${carnet}</th>
     <td>${schedule}</td>
     <td>${datetime.toLocaleDateString()}</td>
-    <td>${late}</td>
+    <td>${later}</td>
     `
     table_body.appendChild(new_row)
 
@@ -39,18 +38,19 @@ submit_btn.addEventListener("click", () => {
         alert("Formato de carnet no valido")
     }
 
-    carnet_field.addEventListener("keyup", (event) => {
-        let keyCode = event.keyCode
-        let carnet = carnet_field.value
+})
 
-        if (keyCode == 13){
-            submit_btn.click()
-        }
+carnet_field.addEventListener("keyup", (event) => {
+    let keyCode = event.keyCode
+    let carnet = carnet_field.value
 
-        if(carnet_regex.test(carnet)){
-            submit_btn.disabled = false;
-        }else{
-            submit_btn.disabled = true;
-        }
-    })
+    if (keyCode == 13){
+        submit_btn.click()
+    }
+
+    if(carnet_regex.test(carnet)){
+        submit_btn.disabled = false;
+    }else{
+        submit_btn.disabled = true;
+    }
 })
